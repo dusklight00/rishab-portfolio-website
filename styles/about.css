@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(../img/photo.jpg);
+    background-size: auto;
+    width: 100%;
+    height: 100vh;
+    min-height: 40em;
+    display: grid;
+    place-items:center;
+}
+
+
+.main{
+    width: 85%;
+    height: 80vh;
+    min-width: 80vw;
+    height: 30em;
+    background: #3b2186;
+    box-shadow: 7px 7px 7px 7px rgba(0,0,0,0.5);
+}
+
+.navbar{
+    display: flex;
+    height: 50px;
+    justify-content: left;
+    align-items: center;
+    background: #181c2f;
+}
+
+.navbar li{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    padding-bottom: 4px;
+    border-bottom: 2px solid white;
+}
+
+#ab{
+    padding-right: 40px;
+}
+
+.sec{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.sec img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 50px;
+}
+
+.text-box{
+    display: block;
+}
+.text-box p{
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+.text-box h1{
+    padding: 10px;
+    color: #a580ff;
+}
+
+.text-box{
+    width: 50%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+/* User Image Animate */
+
+.user-image {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.user-image .user-pfp {
+    background: url(../img/1.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.user-image .user-shadow {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    transition: top 0.5s, left 0.5s;
+}
+
+.user-image:hover .user-shadow {
+    top: 5px;
+    left: 5px;
+}

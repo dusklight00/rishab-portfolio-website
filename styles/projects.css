@@ -1,0 +1,146 @@
+body {
+    background: url(../img/welcome-page.jpg) center center fixed;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Navbar */
+
+.nav-container {
+    background-color: #0a192f;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.nav-title, .nav-item {
+    padding: 20px 30px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-title {
+    padding: 20px 50px 20px 30px;
+}
+
+.nav-underline {
+    background-color: #fff;
+    height: 3px;
+    width: 0px;
+    top: 50px;
+    position: absolute;
+    transition: width 0.5s;
+}
+
+.nav-item:hover .nav-underline {
+    width: 40px;
+}
+
+/* Border Container */
+
+.border-container {
+    background: #0a192f51;
+    border: dashed thick #000;
+    width: 90vw;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Project Title */
+
+.title {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    z-index: 3;
+}
+
+.title .title-content {
+    background-color: rgb(82, 1, 203);
+    color: #fff;
+    font-weight: 600;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.title .title-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: top 1s, left 1s;
+}
+
+.title:hover .title-shadow {
+    top: 10px;
+    left: 10px;
+}
+
+/* Items Grid */
+
+.items {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+.items .item {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 3;
+}
+
+.item .item-content {
+    background: rgb(82, 1, 203);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.item .item-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: top 1s, left 1s;
+}
+
+.item:hover .item-shadow {
+    top: 10px;
+    left: 10px;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
